@@ -3,7 +3,9 @@ Various MATLAB examples.
 
 ## Optimization
 
-### Ackley Function
+### Unconstrained
+
+#### Ackley Function
 
 ![](figs/e01_opt_ackley.png)
 
@@ -30,7 +32,7 @@ uncf =
    3.5527e-15
 ```
 
-### Himmelblau's Function
+#### Himmelblau's Function
 
 ![](figs/e02_opt_himmelblau.png)
 
@@ -61,4 +63,30 @@ uncx =
 uncf =
 
    5.2125e-12
+```
+
+#### Rosenbrock Function
+
+![](figs/e03_opt_rosenbrock.png)
+
+```
+                                                        First-order 
+ Iteration  Func-count       f(x)        Step-size       optimality
+     0           3                0                      5.98e-06
+
+Local minimum possible.
+
+fminunc stopped because it cannot decrease the objective function
+along the current search direction.
+
+<stopping criteria details>
+
+uncx =
+
+     1     1
+
+
+uncf =
+
+     0
 ```

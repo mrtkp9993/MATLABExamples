@@ -46,3 +46,23 @@ x0 = [1, 1]; % initial guess
 [x, fval, exitflag, output] = fminunc(fun,x0,options);
 uncx = x
 uncf = fval
+
+%% Rosenbrock Function
+%  Two variable case
+%  Global min at (0,0)
+f = @(x, y) 100 * (y - x ^ 2) ^ 2 + (1 - x) ^ 2;
+
+fsurf(f, [-2,2], 'ShowContours', 'on')
+colorbar
+xlabel('x')
+ylabel('y')
+zlabel('z')
+title("Rosenbrock function")
+view([135 30])
+saveas(gcf, '../figs/e03_opt_rosenbrock.png')
+
+fun = @(x) f(x(1),x(2));
+x0 = [1, 1]; % initial guess
+[x, fval, exitflag, output] = fminunc(fun,x0,options);
+uncx = x
+uncf = fval
