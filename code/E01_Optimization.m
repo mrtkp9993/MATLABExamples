@@ -25,3 +25,24 @@ x0 = [1, 1]; % initial guess
 [x, fval, exitflag, output] = fminunc(fun,x0,options);
 uncx = x
 uncf = fval
+
+%% Himmelblau's function
+%  Global min at f( 3.00,  2.00) = 0
+%                f(-2.80,  3.13) = 0
+%                f(-3.77, -3.28) = 0
+%                f( 3.58, -1.84) = 0
+f = @(x,y) (x ^ 2 + y - 11) ^ 2 + (x + y ^ 2 - 7) ^ 2;
+
+fsurf(f, [-6,6], 'ShowContours', 'on')
+colorbar
+xlabel('x')
+ylabel('y')
+zlabel('z')
+title("Himmelblau's function")
+saveas(gcf, '../figs/e02_opt_himmelblau.png')
+
+fun = @(x) f(x(1),x(2));
+x0 = [1, 1]; % initial guess
+[x, fval, exitflag, output] = fminunc(fun,x0,options);
+uncx = x
+uncf = fval
