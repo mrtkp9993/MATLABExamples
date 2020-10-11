@@ -34,7 +34,7 @@ uncf =
 
 #### Himmelblau's Function
 
-![](figs/e02_opt_himmelblau.png)
+![](figs/e01_opt_himmelblau.png)
 
 ```
                                                         First-order 
@@ -67,7 +67,7 @@ uncf =
 
 #### Rosenbrock Function
 
-![](figs/e03_opt_rosenbrock.png)
+![](figs/e01_opt_rosenbrock.png)
 
 ```
                                                         First-order 
@@ -90,3 +90,9 @@ uncf =
 
      0
 ```
+
+## Partial differential equations
+
+### Fokker-Planck equation
+
+![](figs/E02_fp_pde.png)
