@@ -96,3 +96,10 @@ uncf =
 ### Fokker-Planck equation
 
 ![](figs/E02_fp_pde.png)
+
+## Time Series & Signal Processing
+
+### Sunspots data
+
+![](figs/E03_plot_1.png)
+![](figs/E03_plot_2.png)
